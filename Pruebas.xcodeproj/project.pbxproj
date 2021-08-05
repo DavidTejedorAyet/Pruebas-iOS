@@ -15,6 +15,7 @@
 		63DA86E026BAA81E00B6D21F /* Pruebas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63DA86DE26BAA81E00B6D21F /* Pruebas.xcdatamodeld */; };
 		63DA86EB26BAA81E00B6D21F /* PruebasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA86EA26BAA81E00B6D21F /* PruebasTests.swift */; };
 		63DA86F626BAA81E00B6D21F /* PruebasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA86F526BAA81E00B6D21F /* PruebasUITests.swift */; };
+		63DDD74F26BAB0F4007B94AF /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDD74E26BAB0F4007B94AF /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		63DA86F126BAA81E00B6D21F /* PruebasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DA86F526BAA81E00B6D21F /* PruebasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebasUITests.swift; sourceTree = "<group>"; };
 		63DA86F726BAA81E00B6D21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DDD74E26BAB0F4007B94AF /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				63DA86D326BAA81D00B6D21F /* PruebasApp.swift */,
 				63DA86D526BAA81D00B6D21F /* ContentView.swift */,
+				63DDD74E26BAB0F4007B94AF /* ImageView.swift */,
 				63DA86D726BAA81E00B6D21F /* Assets.xcassets */,
 				63DA86DC26BAA81E00B6D21F /* Persistence.swift */,
 				63DA86E126BAA81E00B6D21F /* Info.plist */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DDD74F26BAB0F4007B94AF /* ImageView.swift in Sources */,
 				63DA86DD26BAA81E00B6D21F /* Persistence.swift in Sources */,
 				63DA86D626BAA81D00B6D21F /* ContentView.swift in Sources */,
 				63DA86E026BAA81E00B6D21F /* Pruebas.xcdatamodeld in Sources */,
