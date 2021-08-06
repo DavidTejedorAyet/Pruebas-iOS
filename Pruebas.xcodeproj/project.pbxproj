@@ -16,6 +16,11 @@
 		63DA86EB26BAA81E00B6D21F /* PruebasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA86EA26BAA81E00B6D21F /* PruebasTests.swift */; };
 		63DA86F626BAA81E00B6D21F /* PruebasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA86F526BAA81E00B6D21F /* PruebasUITests.swift */; };
 		63DDD74F26BAB0F4007B94AF /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDD74E26BAB0F4007B94AF /* ImageView.swift */; };
+		63DDD75226BBE4F6007B94AF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDD75126BBE4F6007B94AF /* MapView.swift */; };
+		63DDD75426BBE8B7007B94AF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDD75326BBE8B7007B94AF /* MainView.swift */; };
+		63DDD75926BBEEA0007B94AF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDD75826BBEEA0007B94AF /* User.swift */; };
+		63DDD75B26BBEF1E007B94AF /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDD75A26BBEF1E007B94AF /* CellView.swift */; };
+		63DDD75D26BBF0D4007B94AF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDD75C26BBF0D3007B94AF /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		63DA86F526BAA81E00B6D21F /* PruebasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebasUITests.swift; sourceTree = "<group>"; };
 		63DA86F726BAA81E00B6D21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63DDD74E26BAB0F4007B94AF /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		63DDD75126BBE4F6007B94AF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		63DDD75326BBE8B7007B94AF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		63DDD75826BBEEA0007B94AF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63DDD75A26BBEF1E007B94AF /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		63DDD75C26BBF0D3007B94AF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				63DA86D326BAA81D00B6D21F /* PruebasApp.swift */,
+				63DDD75526BBEE65007B94AF /* Data */,
 				63DDD75026BBE0F3007B94AF /* SwiftUI */,
 				63DA86D726BAA81E00B6D21F /* Assets.xcassets */,
 				63DA86DC26BAA81E00B6D21F /* Persistence.swift */,
@@ -143,8 +154,20 @@
 			children = (
 				63DDD74E26BAB0F4007B94AF /* ImageView.swift */,
 				63DA86D526BAA81D00B6D21F /* ContentView.swift */,
+				63DDD75126BBE4F6007B94AF /* MapView.swift */,
+				63DDD75326BBE8B7007B94AF /* MainView.swift */,
+				63DDD75A26BBEF1E007B94AF /* CellView.swift */,
+				63DDD75C26BBF0D3007B94AF /* ListView.swift */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		63DDD75526BBEE65007B94AF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				63DDD75826BBEEA0007B94AF /* User.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,10 +300,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				63DDD74F26BAB0F4007B94AF /* ImageView.swift in Sources */,
+				63DDD75426BBE8B7007B94AF /* MainView.swift in Sources */,
+				63DDD75D26BBF0D4007B94AF /* ListView.swift in Sources */,
+				63DDD75226BBE4F6007B94AF /* MapView.swift in Sources */,
 				63DA86DD26BAA81E00B6D21F /* Persistence.swift in Sources */,
+				63DDD75926BBEEA0007B94AF /* User.swift in Sources */,
 				63DA86D626BAA81D00B6D21F /* ContentView.swift in Sources */,
 				63DA86E026BAA81E00B6D21F /* Pruebas.xcdatamodeld in Sources */,
 				63DA86D426BAA81D00B6D21F /* PruebasApp.swift in Sources */,
+				63DDD75B26BBEF1E007B94AF /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
