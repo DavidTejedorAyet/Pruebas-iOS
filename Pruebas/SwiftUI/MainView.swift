@@ -14,7 +14,7 @@ struct MainView: View {
                 MapView().frame(height: 400)
                 ImageView().offset(y: -150)
                 Divider()
-                ContentView()
+                PersistenceView()
             }
         }
     }

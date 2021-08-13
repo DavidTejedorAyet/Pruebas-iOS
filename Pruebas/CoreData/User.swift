@@ -13,4 +13,5 @@ struct User {
     var name: String
     var avatar: Image
     var skill: String
+    var favorite: Bool
 }

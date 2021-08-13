@@ -12,7 +12,7 @@ struct ImageView: View {
         VStack(alignment: .center, spacing: 30) {
             Image("michi").resizable().padding(80).background(Color.gray).scaledToFill().frame(width: 300, height: 300).clipShape(Circle()).overlay(Circle().stroke(Color.blue, lineWidth: 9)).shadow(radius: 10)
             
-            Image(systemName: "person.fill.badge.minus").resizable().padding(80).background(Color.gray).scaledToFill().frame(width: 300, height: 300).clipShape(Circle()).overlay(Circle().stroke(Color.blue, lineWidth: 9)).shadow(radius: 10)
+            
         }
     }
 }

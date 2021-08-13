@@ -7,21 +7,46 @@
 
 import SwiftUI
 
-private let users = [User(id: 1, name: "David", avatar: Image(systemName:"person.fill"), skill: "Cocinar"),
-                     User(id: 2, name: "Alfon", avatar: Image(systemName:"person.fill"), skill: "Programar"),
-                          User(id: 3, name: "Esther", avatar: Image(systemName:"person.fill"), skill: "Dibujar")]
+final class UsersModelData: ObservableObject {
+    @Published var users = [User(id: 0, name: "David", avatar: Image(systemName:"person.fill"), skill: "Cocinar", favorite: true),
+                            User(id: 1, name: "Alfon", avatar: Image(systemName:"person.fill"), skill: "Programar", favorite: false),
+                            User(id: 2, name: "Esther", avatar: Image(systemName:"person.fill"), skill: "Dibujar", favorite: true)]
+}
+
 
 struct ListView: View {
+    
+    @EnvironmentObject var usersModelData: UsersModelData
+    @State private var showFavorites = false
+    private var filteredUsers: [User] {
+        return usersModelData.users.filter { user in
+            return !showFavorites || user.favorite
+        }
+    }
+    
     var body: some View {
-        List(users, id: \.id) {
-            user in 
-            CellView(user: user)
+        NavigationView {
+            VStack {
+                Toggle(isOn: $showFavorites) {
+                    Text("Mostrar favoritos")
+                }.padding()
+                
+                
+                
+                List(filteredUsers, id: \.id) {
+                    user in
+                    NavigationLink(destination: DetailView(user: user, favorite: $usersModelData.users[user.id].favorite)) {
+                        CellView(user: user)
+                    }
+                }
+                
+            }.navigationTitle("Usuarios")
         }
     }
 }
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        ListView().environmentObject(UsersModelData())
     }
 }

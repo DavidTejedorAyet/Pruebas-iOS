@@ -21,12 +21,15 @@ struct CellView: View {
                     .font(.subheadline)
             }
             Spacer()
+            if user.favorite {
+            Image(systemName: "star.fill").foregroundColor(.yellow)
+            }
         }
     }
 }
 
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(user: User(id: 1, name: "David", avatar: Image(systemName:"person.fill"), skill: "Cocinar"))
+        CellView(user: User(id: 1, name: "David", avatar: Image(systemName:"person.fill"), skill: "Cocinar", favorite: true))
     }
 }
